@@ -10,7 +10,10 @@ export const metadata: Metadata = {
   description:
     "Temizlik hizmetine ihtiyacı olan kişilerle profesyonel temizlikçileri bir araya getiren dijital platform. Yakında 81 ilde hizmetinizde!",
   keywords: "temizlik, temizlik hizmeti, ev temizliği, ofis temizliği, temizlikçi, dijital platform",
-    generator: 'v0.dev'
+  generator: "v0.dev",
+  icons: {
+    icon: "/favicon.ico", 
+  },
 }
 
 export default function RootLayout({
@@ -24,3 +27,4 @@ export default function RootLayout({
     </html>
   )
 }
+
