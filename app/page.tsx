@@ -1,7 +1,21 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { MapPin, Star, Shield, Clock, Users, Target, Eye, Mail, Instagram } from "lucide-react"
+import {
+  MapPin,
+  Star,
+  Shield,
+  Clock,
+  Users,
+  Target,
+  Eye,
+  Mail,
+  Instagram,
+  Home,
+  Building,
+  Cog,
+  Wrench,
+} from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -113,6 +127,188 @@ export default function HomePage() {
                 <Clock className="w-8 h-8 mb-2" />
                 <p className="font-semibold">7/24 Hizmet</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Scope Section */}
+      <section className="py-16 px-4 bg-gradient-to-br from-gray-50 to-white">
+        <div className="container mx-auto">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl md:text-4xl font-bold text-[#1D2D50] mb-4">Hizmet Kapsamımız</h3>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#6F1D1B] to-[#1D2D50] mx-auto mb-6"></div>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              <strong className="text-[#6F1D1B]">Tüm temizlik hizmetlerinde biz varız!</strong> Sadece ev temizliği
+              değil, endüstriyel temizlikten özel projelere kadar her alanda profesyonel çözümler sunuyoruz.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Residential Services */}
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#6F1D1B] to-[#1D2D50] rounded-lg flex items-center justify-center mr-3">
+                    <Home className="w-6 h-6 text-white" />
+                  </div>
+                  <h4 className="text-xl font-semibold text-[#1D2D50]">Konut Temizliği</h4>
+                </div>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-[#6F1D1B] rounded-full mr-2"></div>Ev temizliği
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-[#6F1D1B] rounded-full mr-2"></div>Villa - Çiftlik Temizliği
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-[#6F1D1B] rounded-full mr-2"></div>Halı yıkama
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-[#6F1D1B] rounded-full mr-2"></div>Koltuk Yıkama
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Commercial Services */}
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#6F1D1B] to-[#1D2D50] rounded-lg flex items-center justify-center mr-3">
+                    <Building className="w-6 h-6 text-white" />
+                  </div>
+                  <h4 className="text-xl font-semibold text-[#1D2D50]">Ticari Temizlik</h4>
+                </div>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-[#6F1D1B] rounded-full mr-2"></div>Ofis temizliği
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-[#6F1D1B] rounded-full mr-2"></div>Bina temizliği
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-[#6F1D1B] rounded-full mr-2"></div>Okul - dershane temizliği
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-[#6F1D1B] rounded-full mr-2"></div>Dış Cephe Cam temizliği
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Industrial Services */}
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#6F1D1B] to-[#1D2D50] rounded-lg flex items-center justify-center mr-3">
+                    <Cog className="w-6 h-6 text-white" />
+                  </div>
+                  <h4 className="text-xl font-semibold text-[#1D2D50]">Endüstriyel Temizlik</h4>
+                </div>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-[#6F1D1B] rounded-full mr-2"></div>Fabrika - depo temizliği
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-[#6F1D1B] rounded-full mr-2"></div>Endüstriyel temizlik
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-[#6F1D1B] rounded-full mr-2"></div>Güneş paneli temizliği
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-[#6F1D1B] rounded-full mr-2"></div>Su deposu temizliği
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Specialized Services */}
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#6F1D1B] to-[#1D2D50] rounded-lg flex items-center justify-center mr-3">
+                    <Wrench className="w-6 h-6 text-white" />
+                  </div>
+                  <h4 className="text-xl font-semibold text-[#1D2D50]">Özel Projeler</h4>
+                </div>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-[#6F1D1B] rounded-full mr-2"></div>İnşaat Sonrası Temizlik
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-[#6F1D1B] rounded-full mr-2"></div>Yangın Sonrası Temizlik
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-[#6F1D1B] rounded-full mr-2"></div>Tekne - yat temizliği
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-[#6F1D1B] rounded-full mr-2"></div>Dezenfektasyon
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Health & Safety Services */}
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#6F1D1B] to-[#1D2D50] rounded-lg flex items-center justify-center mr-3">
+                    <Shield className="w-6 h-6 text-white" />
+                  </div>
+                  <h4 className="text-xl font-semibold text-[#1D2D50]">Sağlık & Güvenlik</h4>
+                </div>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-[#6F1D1B] rounded-full mr-2"></div>Böcek ilaçlama
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-[#6F1D1B] rounded-full mr-2"></div>Haşere ilaçlama
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-[#6F1D1B] rounded-full mr-2"></div>Dezenfektasyon
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-[#6F1D1B] rounded-full mr-2"></div>Hijyen kontrolü
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Premium Services */}
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#6F1D1B] to-[#1D2D50] rounded-lg flex items-center justify-center mr-3">
+                    <Star className="w-6 h-6 text-white" />
+                  </div>
+                  <h4 className="text-xl font-semibold text-[#1D2D50]">Premium Hizmetler</h4>
+                </div>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-[#6F1D1B] rounded-full mr-2"></div>VIP temizlik hizmetleri
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-[#6F1D1B] rounded-full mr-2"></div>Acil temizlik müdahalesi
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-[#6F1D1B] rounded-full mr-2"></div>Özel etkinlik temizliği
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-2 h-2 bg-[#6F1D1B] rounded-full mr-2"></div>Periyodik bakım
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center mt-12">
+            <div className="bg-gradient-to-r from-[#6F1D1B] to-[#1D2D50] text-white p-8 rounded-2xl shadow-xl">
+              <h4 className="text-2xl font-bold mb-4">Hangi Temizlik İhtiyacınız Olursa Olsun</h4>
+              <p className="text-lg opacity-90">
+                Küçük ev temizliğinden büyük endüstriyel projelere, acil müdahalelerden düzenli bakımlara kadar
+                <strong> tüm temizlik hizmetlerinde yanınızdayız!</strong>
+              </p>
             </div>
           </div>
         </div>
